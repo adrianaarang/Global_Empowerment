@@ -1,0 +1,191 @@
+/* ============================================================
+   QUIENES-SOMOS.CSS — The Global Empowerment
+   ============================================================ */
+
+/* ── Hero ───────────────────────────────────────────────────── */
+.sobre-hero {
+  background-color: var(--arena);
+  padding: 4rem 0;
+}
+
+.min-vh-sobre {
+  min-height: 75vh;
+}
+
+.sobre-hero-img-wrap {
+  position: relative;
+}
+
+.sobre-hero-img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 20px;
+  display: block;
+}
+
+.sobre-hero-badge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(61, 44, 46, 0.85);
+  color: var(--arena);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  border-radius: 30px;
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Grid de imágenes ───────────────────────────────────────── */
+.sobre-grid-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 16px;
+  display: block;
+  height: 180px;
+}
+
+.sobre-grid-img-tall {
+  height: 100%;
+  min-height: 375px;
+}
+
+/* ── Valores ────────────────────────────────────────────────── */
+.valores-strip {
+  background-color: var(--ebano);
+}
+
+.valores-strip .section-label { color: var(--coral); }
+.valores-strip .section-title { color: var(--arena); }
+
+.valor-item {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.valor-item-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin: 0 auto 1rem;
+}
+
+.valor-item h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--arena);
+  margin-bottom: 0.5rem;
+}
+
+.valor-item p {
+  font-size: 14px;
+  color: #a09092;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Equipo ─────────────────────────────────────────────────── */
+.equipo-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 20px rgba(61, 44, 46, 0.09);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.equipo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 32px rgba(61, 44, 46, 0.14);
+}
+
+.equipo-img-wrap {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.equipo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.equipo-card:hover .equipo-img {
+  transform: scale(1.04);
+}
+
+.equipo-img-fallback {
+  width: 100%;
+  height: 100%;
+  background: var(--arena);
+  color: #c0b0b2;
+  font-size: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.equipo-body {
+  padding: 1.75rem 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.equipo-nombre {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ebano);
+  margin-bottom: 0.25rem;
+}
+
+.equipo-cargo {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--coral);
+  margin-bottom: 1rem;
+}
+
+.equipo-bio {
+  font-size: 14px;
+  color: #6b5557;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── CTA ────────────────────────────────────────────────────── */
+.cta-title em { font-style: normal; color: var(--coral); }
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (max-width: 991px) {
+  .sobre-hero-img  { height: 340px; }
+  .min-vh-sobre    { min-height: unset; }
+  .sobre-grid-img-tall { min-height: 260px; }
+}
+
+@media (max-width: 575px) {
+  .sobre-hero-img { height: 260px; }
+  .equipo-img-wrap { height: 240px; }
+  .sobre-grid-img { height: 130px; }
+  .sobre-grid-img-tall { min-height: 270px; }
+}

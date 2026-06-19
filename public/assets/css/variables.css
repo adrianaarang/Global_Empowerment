@@ -1,0 +1,17 @@
+:root {
+  --coral:     #FF885B;
+  --verde:     #5F7161;
+  --terracota: #A64B2A;
+  --arena:     #F2EAD3;
+  --ebano:     #3D2C2E;
+
+  --font-main: 'Quicksand Variable', 'Quicksand', sans-serif;
+  --text-min:  16px;
+  --btn-min-h: 48px;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 8rem;
+}
