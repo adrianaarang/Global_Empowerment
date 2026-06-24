@@ -43,11 +43,7 @@ require $rootPath . '/includes/navbar.php';
             <input type="number" id="otraCantidad" class="form-input-ge"
                    placeholder="Ej: 15" min="1">
           </div>
-          <div class="socio-desgrava mt-4">
-            <i class="bi bi-info-circle-fill"></i>
-            <span>Las aportaciones a ONGs <strong>desgravan en la declaración de la renta</strong>.
-              Consulta con tu asesor fiscal para conocer tu deducción exacta.</span>
-          </div>
+  
           <div class="text-center mt-4">
             <button type="button" class="btn btn-coral btn-lg rounded-pill px-5"
                     id="btnQuieroSocio" style="font-size:16px; height:54px">
@@ -218,15 +214,10 @@ require $rootPath . '/includes/navbar.php';
 
           <div class="socio-desgrava mt-4">
             <i class="bi bi-info-circle-fill"></i>
-            <span>Las aportaciones a ONGs <strong>desgravan en la declaración de la renta</strong>.
-              Consulta con tu asesor fiscal para conocer tu deducción exacta.</span>
+          
           </div>
 
           <div class="mt-4 d-flex flex-column gap-3">
-            <label class="socio-check">
-              <input type="checkbox" id="p1_desgrava">
-              <span>Quiero desgravar mi aportación de la declaración de la renta</span>
-            </label>
             <label class="socio-check">
               <input type="checkbox" id="p1_privacidad">
               <span>He leído y acepto la <a href="#">política de privacidad</a> *</span>
